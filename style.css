@@ -1,9 +1,47 @@
 body {
-  background-color: #64ccf5;
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
 }
 
 header {
-  color: #482fd8;
+    background-color: #f6f6f6;
+}
+
+h2 {
+    text-align: left;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+nav button {
+    padding: 20px;
+    text-align: left;
+    border-radius: 1.8em;
+}
+
+main {
+    background-color: #f6f6f6;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #353535;
+    font-family: Shrikhand, sans-serif;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+footer a {
+    color: #ffffff;
+    font-family: roboto, sans-serif;
+    text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

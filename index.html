@@ -4,24 +4,54 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap"
+            rel="stylesheet"
+        />
+
         <title>ohmyfood</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <header>
-            <h1>ohmyfood</h1>
-            <div class="map">Paris, Belleville</div>
-            <div class="explorer">
-                <h2>Réservez le menu qui vous convient</h2>
+            <img src="images/logo/ohmyfood.png" alt="logo de l'aplication" />
+            <div id="box-recherche">
+                <div class="icon_map">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <form method="post" action="traitement.php">
+                    <input
+                        type="text"
+                        name="recherche"
+                        id="recherche"
+                        placeholder="Paris, Belleville"
+                    />
+                </form>
+            </div>
+            <br />
+            <div class="box-explorer">
+                <h1>Réservez le menu qui vous convient</h1>
 
                 <p>Découvrez des restaurents d'exception,</p>
-                <br />
                 <p>sélectionnés par nos soins.</p>
-                <button>Explorer nos restaurants</button>
+
+                <input
+                    id="btn"
+                    type="submit"
+                    value="Explorer nos restaurants"
+                />
             </div>
         </header>
         <nav>
-            <p>Fonctionnement</p>
+            <h2>Fonctionnement</h2>
             <button class="btn bnt-restaurant">Choisissez un restaurant</button>
             <button class="btn btn-menu">Composez votre menu</button>
             <button class="btn btn-degustez">Dégustez au restaurant</button>

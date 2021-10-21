@@ -1,7 +1,65 @@
+//Les variables
+$blanc: #ffffff;
+$noir: #000000;
+$fond-gris: #f6f6f6;
+$violet-primaire: #9356dc;
+$fushia-secondaire: #eb72da;
+$fond-tertiaire: #99e2d0;
+$police-verte: #269d80;
+$fond-sombre: #353535;
+
+$arrondie: 1.8em;
+
+//Mixin
+
+@mixin footer-deco {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $fond-sombre;
+    font-family: Shrikhand, sans-serif;
+    color: $blanc;
+    font-size: 1.1em;
+    & a {
+        color: $blanc;
+        font-family: roboto, sans-serif;
+        text-decoration: none;
+    }
+}
+
+// SCSS la base de la page Accueil
+
 body {
-    background-color: rgb(100, 204, 245);
+    font-family: "Roboto", sans-serif;
+    color: $noir;
+    background-color: $blanc;
+    text-align: center;
 }
 
 header {
-    color: rgb(72, 47, 216);
+    background-color: $fond-gris;
+}
+
+h2 {
+    text-align: left;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    & button {
+        padding: 20px;
+        text-align: left;
+        border-radius: $arrondie;
+    }
+}
+
+main {
+    background-color: $fond-gris;
+}
+
+footer {
+    @include footer-deco;
 }
