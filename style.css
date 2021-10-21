@@ -1,47 +1,102 @@
 body {
-    font-family: "Roboto", sans-serif;
-    color: #000000;
-    background-color: #ffffff;
-    text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
 }
 
 header {
-    background-color: #f6f6f6;
+  background-color: #f6f6f6;
+}
+
+#box-recherche {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px #bebebe solid;
+  border-bottom: #f6f6f6;
+  background-color: #dddddd;
+  height: 50px;
+}
+
+.icon_map, .fas {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -1px;
+  font-size: 1.1em;
+}
+
+form > input {
+  border-style: none;
+  font-size: 1.1em;
+  background-color: #dddddd;
 }
 
 h2 {
-    text-align: left;
-    font-weight: bold;
+  text-align: left;
+  font-weight: bold;
+}
+
+h3 {
+  display: flex;
+  padding: 10px;
+  font-size: 1.1em;
+  color: #ffffff;
+  background-color: #9356dc;
+  border-radius: 70%;
+  position: relative;
+  left: -25px;
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 nav button {
-    padding: 20px;
-    text-align: left;
-    border-radius: 1.8em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  background-color: #f6f6f6;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-align: left;
+  border: solid 1px #f6f6f6;
+  border-radius: 1.7em;
+  width: 85%;
+  margin: auto;
+}
+nav button:hover {
+  background-color: #f2eafb;
+}
+nav button:hover .icon_map, nav button:hover .fas {
+  color: #9356dc;
 }
 
 main {
-    background-color: #f6f6f6;
+  background-color: #f6f6f6;
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: #353535;
-    font-family: Shrikhand, sans-serif;
-    color: #ffffff;
-    font-size: 1.1em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #353535;
+  font-family: Shrikhand, sans-serif;
+  color: #ffffff;
+  font-size: 1.1em;
 }
 footer a {
-    color: #ffffff;
-    font-family: roboto, sans-serif;
-    text-decoration: none;
+  color: #ffffff;
+  font-family: roboto, sans-serif;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

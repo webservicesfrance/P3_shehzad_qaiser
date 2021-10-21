@@ -4,6 +4,12 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Icons de chez Fontawesome-->
+        <script
+            src="https://kit.fontawesome.com/de4eadee7e.js"
+            crossorigin="anonymous"
+        ></script>
+        <!--Google Police de Font-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -17,8 +23,10 @@
             rel="stylesheet"
         />
 
-        <title>ohmyfood</title>
+        <!--Feuille de style-->
         <link rel="stylesheet" href="style.css" />
+
+        <title>ohmyfood</title>
     </head>
     <body>
         <header>
@@ -52,9 +60,27 @@
         </header>
         <nav>
             <h2>Fonctionnement</h2>
-            <button class="btn bnt-restaurant">Choisissez un restaurant</button>
-            <button class="btn btn-menu">Composez votre menu</button>
-            <button class="btn btn-degustez">Dégustez au restaurant</button>
+            <button class="btn bnt-restaurant">
+                <h3>1</h3>
+                <div class="icon_map">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <p>Choisissez un restaurant</p>
+            </button>
+            <button class="btn btn-menu">
+                <h3>2</h3>
+                <div class="icon_map">
+                    <i class="fas fa-list-ul"></i>
+                </div>
+                <p>Composez votre menu</p>
+            </button>
+            <button class="btn btn-degustez">
+                <h3>3</h3>
+                <div class="icon_map">
+                    <i class="fas fa-store" id="shop"></i>
+                </div>
+                <p>Dégustez au restaurant</p>
+            </button>
         </nav>
         <main>
             <h2>Restaurants</h2>
@@ -90,7 +116,7 @@
             </section>
         </main>
         <footer>
-            <h3>ohmyfood</h3>
+            <h2>ohmyfood</h2>
             <a href="page-proposer.html">Proposer un restaurent</a>
             <a href="page-partenaire.html">Devenir partenaire</a>
             <a href="mentions.html">Mentions légales</a>
