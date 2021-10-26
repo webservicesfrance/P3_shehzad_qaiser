@@ -1,0 +1,45 @@
+@mixin footer-deco {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding-left: 20px;
+    background-color: $fond-sombre;
+    font-family: Shrikhand, Verdana, Geneva, Tahoma, sans-serif;
+    color: $blanc;
+    font-size: $fsize1;
+    & a {
+        color: $blanc;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+    }
+    & a:hover{color:$violet-primaire;}
+}
+
+
+@mixin bouton {
+    button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        background-color: $fond-gris;
+        font-size: $fsize1;
+        font-weight: 700;
+        text-align: left;
+        border: solid 1px $fond-gris;
+        border-radius: $arrondie;
+        width: 85%;
+        margin: auto;
+        &:hover {
+            background-color: lighten($violet-primaire, 35%);
+            .icon_map {
+                color: $violet-primaire;
+            }
+        }
+    }
+}
+
+
+@mixin shadow {
+    text-shadow: $size $size darken($fond-gris, 20%);
+}

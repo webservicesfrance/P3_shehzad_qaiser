@@ -1,73 +1,22 @@
-//Les variables
-$blanc: #ffffff;
-$noir: #000000;
-$fond-gris: #f6f6f6;
-$violet-primaire: #9356dc;
-$fushia-secondaire: #eb72da;
-$fond-tertiaire: #99e2d0;
-$police-verte: #269d80;
-$fond-sombre: #353535;
-
-$arrondie: 1.7em;
-$size: 5px;
-$fsize1: 1.1em;
-
-//Mixin
-
-@mixin footer-deco {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: $fond-sombre;
-    font-family: Shrikhand, sans-serif;
-    color: $blanc;
-    font-size: $fsize1;
-    & a {
-        color: $blanc;
-        font-family: roboto, sans-serif;
-        text-decoration: none;
-    }
-}
-
-@mixin bouton {
-    button {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 10px;
-        background-color: $fond-gris;
-        font-size: $fsize1;
-        font-weight: 700;
-        text-align: left;
-        border: solid 1px $fond-gris;
-        border-radius: $arrondie;
-        width: 85%;
-        margin: auto;
-        &:hover {
-            background-color: lighten($violet-primaire, 35%);
-            .icon_map {
-                color: $violet-primaire;
-            }
-        }
-    }
-}
-
-@mixin shadow {
-    text-shadow: $size $size darken($fond-gris, 20%);
-}
-
-// SCSS la base de la page Accueil
+//Les fichiers Import
+@import "import/variable.scss";
+@import "import/mixin.scss";
 
 body {
     font-family: "Roboto", sans-serif;
     color: $noir;
     background-color: $blanc;
     text-align: center;
+    width: 940px;
+    @media screen and (max-width:768px) {
+        width: auto; }
+
 }
 
 header {
     background-color: $fond-gris;
 }
+
 
 #box-recherche {
     display: flex;
@@ -97,10 +46,18 @@ form > input {
     background-color: darken($fond-gris, 10%);
 }
 
-h2 {
-    text-align: left;
-    font-weight: bold;
+#btn_principal{font-size: x-large;
+    color: white;
+    padding: 20px;
+    border-radius: 2em;
+    border: 1px solid $fond-gris;
+    background: radial-gradient(at 70% 80%, $violet-primaire, $fushia-secondaire);}
+
+h1, h2, h3 {font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
 }
+
+h2{text-align: left;}
 
 h3 {
     width: 30px;
@@ -115,6 +72,9 @@ h3 {
     position: relative;
     left: -25px;
 }
+
+h4{font-size: $fsize1+0.5;font-weight: bold}
+
 
 .fas {
     @extend .icon_map;
@@ -170,6 +130,7 @@ main {
 footer {
     @include footer-deco;
 }
-h4 {
-    font-size: $fsize1 + 0.4;
+.hfooter {
+    font-size: 1.5em;
+    letter-spacing: 3px;
 }
