@@ -1,0 +1,51 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: $noir;
+    background-color: $blanc;
+    text-align: center;
+    width: 940px;
+    @media screen and (max-width: 768px) {
+        width: auto;
+    }
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h5 {
+    font-size: 15px;
+    font-weight: bold;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: $blanc;
+    background-color: $violet-primaire;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: -25px;
+}

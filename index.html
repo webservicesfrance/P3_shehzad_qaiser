@@ -4,31 +4,28 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!--Icons de chez Fontawesome-->
-        <script
-            src="https://kit.fontawesome.com/de4eadee7e.js"
-            crossorigin="anonymous"
-        ></script>
+        <!--Feuille de style-->
+        <link rel="stylesheet" href="css/index.css" />
+
         <!--Google Police de Font-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
             rel="stylesheet"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap"
-            rel="stylesheet"
-        />
-
-        <!--Feuille de style-->
-        <link rel="stylesheet" href="css/style.css" />
+        <!------------chargement de l'icon logo--------->
+        <link rel="icon" type="image/svg" href="images/logo/ohmyfood@2x.svg" />
+        <!--Icons de chez Fontawesome-->
+        <script
+            src="https://kit.fontawesome.com/7399728304.js"
+            crossorigin="anonymous"
+        ></script>
 
         <title>ohmyfood</title>
     </head>
     <body>
+        <!-------HEADER------->
         <header>
             <img src="images/logo/ohmyfood.png" alt="logo de l'aplication" />
             <div id="box-recherche">
@@ -45,37 +42,41 @@
                 </form>
             </div>
             <br />
-            <div class="box-explorer">
+            <!------ TITRES et BOUTON------->
+            <section class="box-explorer">
                 <h1>Réservez le menu qui vous convient</h1>
 
-                <p>Découvrez des restaurents d'exception,</p>
-                <p>sélectionnés par nos soins.</p>
+                <p>
+                    Découvrez des restaurents d'exception, sélectionnés par nos
+                    soins.
+                </p>
 
                 <input
                     id="btn_principal"
                     type="submit"
                     value="Explorer nos restaurants"
                 />
-            </div>
+            </section>
         </header>
+        <!---FONCTIONNEMENT-------->
         <nav>
             <h2>Fonctionnement</h2>
             <button class="btn bnt-restaurant">
-                <h3>1</h3>
+                <h5>1</h5>
                 <div class="icon_map">
                     <i class="fas fa-mobile-alt"></i>
                 </div>
                 <p>Choisissez un restaurant</p>
             </button>
             <button class="btn btn-menu">
-                <h3>2</h3>
+                <h5>2</h5>
                 <div class="icon_map">
                     <i class="fas fa-list-ul"></i>
                 </div>
                 <p>Composez votre menu</p>
             </button>
             <button class="btn btn-degustez">
-                <h3>3</h3>
+                <h5>3</h5>
                 <div class="icon_map">
                     <i class="fas fa-store" id="shop"></i>
                 </div>
@@ -85,17 +86,24 @@
         <br />
         <main>
             <h2>Restaurants</h2>
-            <div class="vigniette-resto vr1">
-                <div class="case-image">
-                    <img
-                        src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                        alt=""
-                    />
-                </div>
-                <div class="case-texte">
-                    <h4>La pallette du gout</h4>
-                    <p>Ménilmontant</p>
-                </div>
+            <div class="vigniette-resto vr2">
+                <a href="menu-la-palette-du-gout.html">
+                    <figure class="case-image">
+                        <div class="etiquette">Nouveau</div>
+                        <img
+                            src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                            alt="La palette du goût"
+                        />
+                        <figcaption class="case-texte">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilpontant</p>
+                            <div class="coeur">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
             <div class="vigniette-resto vr2">
                 <div class="case-image">
@@ -105,9 +113,12 @@
                     />
                 </div>
                 <div class="case-texte">
-                    <h4>La note enchantée</h4>
-                    <p>Charonne</p>
+                    <div class="texte">
+                        <h4>La note enchantée</h4>
+                        <p>Charonne</p>
+                    </div>
                 </div>
+                <div class="coeur"><i class="far fa-heart"></i></div>
             </div>
             <div class="vigniette-resto vr3">
                 <div class="case-image">
@@ -117,9 +128,12 @@
                     />
                 </div>
                 <div class="case-texte">
-                    <h4>A la francaise</h4>
-                    <p>Cité Rouge</p>
+                    <div class="texte">
+                        <h4>A la francaise</h4>
+                        <p>Cité Rouge</p>
+                    </div>
                 </div>
+                <div class="coeur"><i class="far fa-heart"></i></div>
             </div>
             <div class="vigniette-resto vr4">
                 <div class="case-image">
@@ -129,9 +143,12 @@
                     />
                 </div>
                 <div class="case-texte">
-                    <h4>Le délice des sens</h4>
-                    <p>Folie-Méricourt</p>
+                    <div class="texte">
+                        <h4>Le délice des sens</h4>
+                        <p>Folie-Méricourt</p>
+                    </div>
                 </div>
+                <div class="coeur"><i class="far fa-heart"></i></div>
             </div>
         </main>
         <br />
