@@ -20,11 +20,12 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
+    top: 0px;
     left: -1px;
     font-size: $fsize1;
 }
 
-.fas {
+.icon_map .fas {
     @extend .icon_map;
 }
 
