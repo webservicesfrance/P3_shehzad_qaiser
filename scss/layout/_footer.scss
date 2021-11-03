@@ -1,8 +1,19 @@
+@mixin footerTitre {
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-family: "Shrikhand", cursive;
+    padding-bottom: 10px;
+    width: 100px;
+    line-height: 5px; /*espacement etre le titre et paragraphe*/
+}
+
 @mixin footer-deco {
     display: flex;
     flex-direction: column;
     text-align: start;
     padding-left: 20px;
+    padding-bottom: 20px;
     background-color: $fond-sombre;
     font-family: Shrikhand, Verdana, Geneva, Tahoma, sans-serif;
     color: $blanc;
@@ -21,11 +32,5 @@ footer {
     @include footer-deco;
 }
 .hfooter {
-    color: #ffffff;
-    font-size: 22px;
-    letter-spacing: 3px;
-    font-family: "Shrikhand", cursive;
-    padding-bottom: 10px;
-    width: 100px;
-    line-height: 5px; /*espacement etre le titre et paragraphe*/
+    @include footerTitre;
 }

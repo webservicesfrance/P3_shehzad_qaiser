@@ -30,3 +30,24 @@
     flex-direction: row;
     align-items: center;
 }
+
+@mixin boutonClr {
+    font-size: x-large;
+    color: white;
+    padding: 20px;
+    border-radius: 2em;
+    border: 1px solid $fond-gris;
+    margin-bottom: 20px;
+    background: radial-gradient(
+        at 70% 80%,
+        $violet-primaire,
+        $fushia-secondaire
+    );
+    &:hover {
+        background: radial-gradient(
+            at 70% 80%,
+            $fushia-secondaire,
+            $violet-primaire
+        );
+    }
+}

@@ -67,6 +67,10 @@ h5 {
   left: -25px;
 }
 
+p {
+  font-size: 20px;
+}
+
 /**** KEYFRAME COEUR ****/
 @keyframes flash-coeur {
   0% {
@@ -302,7 +306,7 @@ h6 {
 }
 @media screen and (min-width: 1024px) {
   .carte {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 .carte .descript {
@@ -321,14 +325,11 @@ h6 {
   text-overflow: ellipsis;
   overflow: hidden;
   margin-block: 0px;
-  line-height: 22px;
-}
-.carte .descript p {
-  font-size: 13.5px;
+  font-size: 22px;
 }
 .carte .pri {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
   align-self: flex-end;
   margin: 0px 38px 13px 0px;
 }
@@ -350,6 +351,19 @@ h6 {
 .carte:hover .fa-check-circle {
   transition: all 0.3s 0.3s;
   transform: rotate(360deg);
+}
+
+#btn_principal {
+  font-size: x-large;
+  color: white;
+  padding: 20px;
+  border-radius: 2em;
+  border: 1px solid #f6f6f6;
+  margin-bottom: 20px;
+  background: radial-gradient(at 70% 80%, #9356dc, #eb72da);
+}
+#btn_principal:hover {
+  background: radial-gradient(at 70% 80%, #eb72da, #9356dc);
 }
 
 .entetep1 {
@@ -423,6 +437,7 @@ footer {
   flex-direction: column;
   text-align: start;
   padding-left: 20px;
+  padding-bottom: 20px;
   background-color: #353535;
   font-family: Shrikhand, Verdana, Geneva, Tahoma, sans-serif;
   color: #ffffff;

@@ -109,7 +109,7 @@
     overflow: hidden;
     animation: rideau 0.8s both;
     @media screen and (min-width: 1024px) {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .descript {
         padding: 10px;
@@ -123,18 +123,15 @@
         h4,
         p {
             white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
+            text-overflow: ellipsis; // fait des points s'exclamation
+            overflow: hidden; // cache le surplus de texte
             margin-block: 0px;
-            line-height: 22px;
-        }
-        p {
-            font-size: 13.5px;
+            font-size: 22px;
         }
     }
     .pri {
         font-weight: bold;
-        font-size: 15px;
+        font-size: 20px;
         align-self: flex-end;
         margin: 0px 38px 13px 0px;
     }
@@ -157,4 +154,8 @@
         transition: all 0.3s 0.3s;
         transform: rotate(360deg);
     }
+}
+
+#btn_principal {
+    @include boutonClr;
 }
