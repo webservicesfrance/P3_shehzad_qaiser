@@ -24,3 +24,9 @@
 @mixin shadow {
     text-shadow: $size $size darken($fond-gris, 20%);
 }
+
+@mixin centrage-horiz {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
