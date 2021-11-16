@@ -3,9 +3,17 @@ body {
     color: $noir;
     background-color: $blanc;
     text-align: center;
-    width: 940px;
+    width: auto;
+    margin: auto;
+
+    @media screen and (max-width: 1024px) {
+        width: 768px;
+        margin: auto;
+    }
+
     @media screen and (max-width: 768px) {
-        width: auto;
+        width: 480px;
+        margin: auto;
     }
 }
 
@@ -32,6 +40,10 @@ h2 {
 
 .page2 h2 {
     text-decoration: underline $police-verte 5px;
+}
+
+.titre-carte h2 {
+    font-weight: 100;
 }
 
 h3 {

@@ -27,7 +27,7 @@
     text-align: start;
     background-color: $blanc;
     border-radius: 2em;
-    padding: 5px;
+    padding: 0px;
     margin-bottom: 15px;
     & p {
         font-size: large;
@@ -73,7 +73,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 5px;
+    padding: 1px;
     box-sizing: border-box;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -134,17 +134,18 @@
         font-size: 20px;
         align-self: flex-end;
         margin: 0px 38px 13px 0px;
+        padding-right: 10px;
     }
     .flash {
         font-size: 18px;
-        padding: 20px;
+        padding: 10px 30px 10px 30px;
         color: $blanc;
         background-color: $fond-tertiaire;
         border-radius: 0px 15px 15px 0px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: -75px;
+        margin-right: -85px;
         transition-duration: 0.8s;
     }
     &:hover > .flash {
