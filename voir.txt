@@ -1,7 +1,0 @@
-position fixed;
-top: 0;
-leflt: 0;
-background: blue;
-
-transform: translateX(-350px);
-transition : transform 0.2s;
