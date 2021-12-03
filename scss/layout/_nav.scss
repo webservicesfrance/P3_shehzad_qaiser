@@ -6,6 +6,10 @@ nav {
     gap: 20px;
     @include bouton;
 
+    @media screen and (max-width: 1280px) {
+        flex-direction: column;
+    }
+
     @media screen and (max-width: 1024px) {
         flex-direction: column;
     }

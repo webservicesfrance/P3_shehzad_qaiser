@@ -60,13 +60,6 @@
 .bg-menu {
     display: flex;
     flex-direction: column;
-    @media screen and (min-width: 1024px) {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        flex: 1;
-    }
 }
 
 .carte-box {
@@ -78,6 +71,12 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+
+    @media screen and (min-width: 1280px) {
+        flex: 1 20%;
+        margin: 0px 30px 0px 30px;
+    }
+
     @media screen and (min-width: 1024px) {
         flex: 1 20%;
         margin: 0px 30px 0px 30px;
@@ -108,9 +107,15 @@
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     animation: rideau 0.8s both;
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 20px;
+    }
+
     @media screen and (min-width: 1024px) {
         margin-bottom: 20px;
     }
+
     .descript {
         padding: 10px;
         display: flex;
